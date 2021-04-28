@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Colors */
+:root {
+  --first-color: #444;
+  --seconde-color: #fcb62e;
+  --third-color: #efefef;
+}
+:root {
+  --size-1: 1rem;
+  --size-2: 1.25rem;
+  --size-3: 1.5rem;
+  --size-4: 1.7rem;
+  --size-5: 2rem;
+  --size-6: 2.2rem;
+}
+@font-face {
+  font-family: "Noto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/NotoKufiArabic-Regular.woff2);
+}
+body {
+  font-family: "Noto";
+}
+.container{
+    margin: auto;
+    width: 70%;
+}
+/* Nvabar */
+.navbar {
+  width: 100%;
+  height: 6vh;
+  background-color: #444;
+}
+.navbar_container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Navbar section 1 */
+
+.navbar_section_1 {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.navbar_bars {
+  color: var(--third-color);
+  font-size: var(--size-2);
+  cursor: pointer;
+}
+.navbar_bars:hover {
+  transition: 1s;
+  transform: rotate(180deg);
+}
+.navbar_logo {
+  cursor: pointer;
+  width: 7vw;
+  margin: 0 30px;
+}
+.navbar_sections {
+  font-size: var(--size-2);
+  margin: auto;
+  color: var(--third-color);
+  cursor: pointer;
+}
+
+/* Navbar section 2 */
+
+.navbar_section_2 {
+  margin-left: 80px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_section_2_icon {
+  color: var(--third-color);
+  font-size: var(--size-2);
+}
+.navbar_section_2_login {
+  color: var(--third-color);
+  border: 1px solid var(--third-color);
+  padding: 7px 15px;
+}
+.navbar_section_2_new {
+  color: var(--third-color);
+  border: 1px solid var(--third-color);
+  padding: 7px 15px;
+}
+
+/* Main Style */
+
+
+/* Start Now Section */
+.start_now{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/main.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.start_now_tittle{
+    margin: 30px 0;
+}
+.start_now_details{
+    margin: 30px 0;
+}
+.start_now_button{
+    cursor: pointer;
+    padding: 12px 25px;
+    color: var(--third-color);
+    background-color: #52b035;
+}
+
+/* Gallery Photos */
+.gallery_services{
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    margin-bottom: 10%;
+
+}
+.gallery_services_tittle{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 7vh;
+}
+.gallery_services_box{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 40vh;
+  width: 100%;
+
+}
+.gallery_services_box_section{
+    position: relative;
+    margin: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery_services_box_photo{
+    width: 220px;
+    height: 150px;
+    position: absolute;
+    z-index: -1;
+    
+}
+.gallery_services_box_photo_tittle{
+  position: absolute;
+  font-size: var(--size-2);
+  color: var(--third-color);
+  z-index: 2;
+}
+.gallery_services_box_section_opacity{
+  width: 220px;
+  height: 150px;
+  position: absolute;
+  background:black;
+  opacity: 0.3;
+  z-index: 2;
+}
