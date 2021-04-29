@@ -131,7 +131,7 @@ body {
     width: 100%;
     height: 100vh;
     margin-top: 80px;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
 
 }
 .gallery_services_tittle{
@@ -163,9 +163,15 @@ body {
 }
 .gallery_services_box_photo_tittle{
   position: absolute;
-  font-size: var(--size-2);
-  color: var(--third-color);
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
   z-index: 2;
+  border: 1px solid red;
 }
 .gallery_services_box_section_opacity{
   width: 220px;
@@ -174,4 +180,49 @@ body {
   background:black;
   opacity: 0.3;
   z-index: 2;
+}
+/* Search Bar */
+.search{
+  margin-bottom: 300px;
+  border: 2px solid green;
+  width: 100%;
+  height: 30vh;
+  background-image: url(../img/pattern.jpg); 
+  color: var(--third-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.search_tittle{
+  margin: 20px 0;
+}
+.search_box{
+  padding: 0 15px 0 0;
+  width: 40%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 3px solid yellow; */
+}
+.search_input{
+  width: 70%;
+  padding: 20px 10px;
+  border: none;
+  outline: none;
+
+}
+.search_bt{
+  /* width: 5%; */
+  margin: 5px;
+  padding: 15px 30px;
+  background-color: #52b035;
+  color: var(--third-color);
+  font-family: "Noto";
+  font-size: var(--size-2);
+  border: none;
+}
+.search_box i {
+  color: var(--first-color);
 }
